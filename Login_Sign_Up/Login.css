@@ -1,0 +1,58 @@
+.main_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80vh;
+    margin: 0px 200px 100px 200px;
+    background-color: red;
+}
+
+.sub_1_container_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.icon_1{
+    position: relative;
+    display: inline-block;
+}
+
+.icon_1 input {
+    padding-left: 35px; /* space for the icon */
+    height: 35px;
+    font-size: 14px;
+}
+
+.icon_1 svg {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    fill: #666;
+    pointer-events: none; /* prevents blocking clicks in input */
+}
+.icon_2{
+    position: relative;
+    display: inline-block;
+}
+
+.icon_2 input {
+    padding-left: 35px; /* space for the icon */
+    height: 35px;
+    font-size: 14px;
+}
+
+.icon_2 svg {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    fill: #666;
+    pointer-events: none; /* prevents blocking clicks in input */
+}
