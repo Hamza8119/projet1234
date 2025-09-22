@@ -1,0 +1,107 @@
+    body {
+      font-family: Arial, sans-serif;
+      background: #333030;
+      padding: 20px;
+      color: #e6e0c7;
+    }
+
+    .main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+     
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+      border: 0px solid black;
+    background-color: rgba(22, 20, 18, 0.653);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .options {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .option-btn {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex: 1;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      cursor: pointer;
+      background: #fafafa;
+      transition: all 0.3s ease;
+      box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+
+    .option-btn:hover {
+        box-shadow: rgb(0, 0, 0) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      background: #333030;
+        border-Color : #333030;
+    }
+
+    .shado {
+      padding: 15px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+    }
+
+    .form-inline {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .form-label {
+      margin-bottom: 5px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .form-input {
+      padding: 12px 15px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      outline: none;
+      flex: 1;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+    }
+
+    .form-input:focus {
+      border-color: #007bff;
+      box-shadow: 0 2px 8px rgba(0,123,255,0.2);
+    }
+
+    .btn-pay {
+      margin-top: 20px;
+      padding: 12px 15px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #333030;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+      width: 100%;
+    }
+
+    .btn-pay:hover {
+      background-color: #212020;
+    }
