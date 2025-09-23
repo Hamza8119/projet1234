@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Décorations</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  background: #f0f2f5;
+}
+
+
+.sidebar {
+  width: 220px;
+    background: linear-gradient(
+    90deg,         
+    #ffffff 30%,   
+    #ffffff 60%     
+  );
+  color: black;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  padding: 12px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  opacity: 75%;
+}
+
+.sidebar ul li.active {
+  color:#880e0e;
+  border-radius: 6px;
+}
+.p-1{
+    font-size: 40px;
+    font-weight: 550;
+    margin-top: 50px;
+    text-align: center;
+}
+h4{
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.logout {
+  margin-top: 330px;
+  background: linear-gradient(to right, #b25d5d, #d64545);
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.metrics {
+  display: flex;
+  gap: 20px;
+  width: 1200px;
+  height: 200px;
+}
+
+.card {
+  flex: 1;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.card.red {   background: linear-gradient(
+            
+    #C2272E 30%,   
+       #a5070f 60%     
+  ); }
+.card.orange {
+  background: linear-gradient(
+    to right,
+    #ff1925 ,
+    #ad2e35 
+  );
+}
+
+.card.gradient { background: linear-gradient(to right, #ff9966, #ff5e62); }
+.span2 {
+  color: white;
+  opacity: 0.5;
+    position: relative;   /* ضروري باش يتحرك نسبة للمكان الأصلي */
+  left: 9px;    
+}
+.span1 {
+  color: black;
+  opacity: 0.5;
+    position: relative;   /* ضروري باش يتحرك نسبة للمكان الأصلي */
+margin-top: 40px;}
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+    margin-right: 70px;
+  
+}
+.stat {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;    /* المحتوى عمودي */
+  align-items: center;       /* توسيط أفقي */
+  justify-content: center;   /* توسيط عمودي */
+  text-align: center;        /* النص في الوسط */
+  width: 250px;
+  height: 150px;
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.495);
+  
+}
+
+.orders table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.orders th, .orders td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.delivered { color: green; font-weight: bold; }
+.pending { color: orange; font-weight: bold; }
+
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Logo</h2>
+    <ul>
+      <li class="active"> Dashboard</li>
+      <li> Users</li>
+      <li> Orders</li>
+      <li> Category</li>
+      <li> Settings</li>
+    </ul>
+    <button class="logout"> Logout</button>
+  </div>
+
+  <div class="main">
+    <header>
+      <h1>Matrics aria</h1>
+      <div class="profile">
+        <span>Ahsan Iqbal</span>
+        <small>Admin</small>
+      </div>
+    </header>
+
+    <section class="metrics">
+      <div class="card red">
+        <h3>Sales Amount (Units)</h3>
+        <p class="p-1">80K</p>
+        <h4>17%  <span class="span2">scream de agadir</span></h4>
+      </div>
+      <div class="card orange">
+        <h3>Orders in Dollars</h3>
+        <p class="p-1">$31,00</p>
+        <h4>12% <span class="span2">scream de agadir</span></h4>
+      </div>
+      <div class="card gradient">
+        <h3>Net Profit</h3>
+        <p class="p-1">$40,67</p>
+        <h4>43% <span class="span2">scream de agadir</span></h4>
+        
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="stat">14<br><span class="span1">Draft Orders</span></div>
+      <div class="stat">10<br><span class="span1">Draft Orders</span></div>
+      <div class="stat">125<br><span class="span1">Draft Orders</span></div>
+      <div class="stat">40<br><span class="span1">Draft Orders</span>
+    </section>
+
+    <section class="orders">
+      <h2>List of Orders</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>No of Orders</th>
+            <th>Quantity</th>
+            <th>No of Products</th>
+            <th>Amount</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>45</td><td>800</td><td>23340</td><td>$2,300</td><td><span class="delivered">Delivered</span></td></tr>
+          <tr><td>45</td><td>800</td><td>23340</td><td>$2,300</td><td><span class="pending">Pending</span></td></tr>
+          <tr><td>45</td><td>800</td><td>23340</td><td>$2,300</td><td><span class="delivered">Delivered</span></td></tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+</body>
+</html>

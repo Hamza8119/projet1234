@@ -1,0 +1,160 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* font-size: 36px; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+.container_1{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container_2{
+    /* background-color: red; */
+}
+
+.sub_1_container_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+.icon{
+    position: relative;
+    display: inline-block;
+}
+
+.icon input {
+    padding-left: 35px; /* space for the icon */
+    height: 35px;
+    font-size: 14px;
+}
+
+.icon svg {
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    fill: #666;
+    pointer-events: none; /* prevents blocking clicks in input */
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.icons svg{
+    width: 36px;
+    height: 36px;   
+}
+
+h1,p{
+    text-align: center;
+}
+
+p{
+    margin:30px 0px;
+}
+
+
+
+input[type="email"],input[type="password"]{
+    padding: 10px 60px;
+    background: #d8e0eb;
+
+}
+
+input{
+    border-radius: 5px;
+    border-color: white;
+    padding : 5px 15px;
+}
+
+input[type="submit"]{
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease ;
+    padding: 15px 50px;
+    color: white;
+    background: #134686;
+    border: transparent;
+    font-size:17px ;
+    font-weight: 600;
+    
+}
+
+input[type="submit"]:hover{
+    transform: scale(1.05);
+}
+
+input[type="submit"]:active{
+    transform: scale(0.98);
+}
+
+.sub_1_container_3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.container_2{
+    height: 100vh;
+    width: 70%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.test{
+    flex: 1;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url("https://images.unsplash.com/photo-1700316740839-f5afe22536e4?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&dl=a-chosen-soul-o-D3p035Ou0-unsplash.jpg");
+    background-size: cover;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+#second{
+    background-color: white; 
+    color: black;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+}
+
+.link:hover{
+    text-decoration: none;
+}
+
+
