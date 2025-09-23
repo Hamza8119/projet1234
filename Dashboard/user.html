@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Dashboard</title>
+  <title>Users</title>
   <link rel="stylesheet" href="dashboard.css">
   <style>
     * {
@@ -85,7 +85,7 @@
     }
     .span1 { color: black; opacity: 0.5; margin-top: 10px; }
 
-    .orders table {
+    .User table {
       width: 100%;
       border-collapse: collapse;
       margin-top: 20px;
@@ -93,21 +93,21 @@
       border-radius: 8px;
       overflow: hidden;
     }
-    .orders th {
+    .User th {
       background: #880e0e;
       color: white;
       padding: 12px;
     }
-    .orders td {
+    .User td {
       border: 1px solid #ddd;
       padding: 8px;
       text-align: center;
     }
-    .orders tr:nth-child(even) { background: #f9f9f9; }
+    .User tr:nth-child(even) { background: #f9f9f9; }
     .delivered { color: green; font-weight: bold; }
     .pending { color: orange; font-weight: bold; }
 
-    .orders button {
+    .User button {
       padding: 5px 10px;
       border: none;
       cursor: pointer;
@@ -117,7 +117,7 @@
     .delete-btn { background: #f44336; color: white; }
     .add-btn:hover { background: #fff6f6; color: #4CAF50;}
     .delete-btn:hover { background: #da190b; }
-    .header-orders {
+    .header-User {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -127,7 +127,7 @@
 <body>
   <div class="sidebar">
     <img src="C:/Users/Default.DESKTOP-67P6GFG/Desktop/projet1234/imags/image5.png" alt="Ma Photo">
- <ul> <li style="display: flex; align-items: center; gap: 15px;" class="active"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 700 700" style="enable-background:new 0 0 20 20" xml:space="preserve" class=""><g><path d="M624.73 628.5h-119a61.69 61.69 0 0 1-61.62-61.62v-66.46a.32.32 0 0 0-.32-.31H366a.32.32 0 0 0-.32.31v66.46a61.69 61.69 0 0 1-61.62 61.62h-119a61.69 61.69 0 0 1-61.62-61.62V351.14a78.5 78.5 0 0 1 23.16-55.9L346.26 95.79a83.1 83.1 0 0 1 117.34 0l199.59 199.45a78.5 78.5 0 0 1 23.16 55.9v215.74a61.69 61.69 0 0 1-61.62 61.62zM366 470.11h77.8a30.36 30.36 0 0 1 30.32 30.31v66.46a31.65 31.65 0 0 0 31.62 31.62h119a31.65 31.65 0 0 0 31.62-31.62V351.14A48.7 48.7 0 0 0 642 316.46L442.4 117a53.09 53.09 0 0 0-74.94 0L167.88 316.46a48.7 48.7 0 0 0-14.37 34.68v215.74a31.65 31.65 0 0 0 31.62 31.62h119a31.65 31.65 0 0 0 31.62-31.62v-66.46A30.35 30.35 0 0 1 366 470.11z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g></svg> Dashboard</li>
+    <ul> <li style="display: flex; align-items: center; gap: 15px;" class="active"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 700 700" style="enable-background:new 0 0 20 20" xml:space="preserve" class=""><g><path d="M624.73 628.5h-119a61.69 61.69 0 0 1-61.62-61.62v-66.46a.32.32 0 0 0-.32-.31H366a.32.32 0 0 0-.32.31v66.46a61.69 61.69 0 0 1-61.62 61.62h-119a61.69 61.69 0 0 1-61.62-61.62V351.14a78.5 78.5 0 0 1 23.16-55.9L346.26 95.79a83.1 83.1 0 0 1 117.34 0l199.59 199.45a78.5 78.5 0 0 1 23.16 55.9v215.74a61.69 61.69 0 0 1-61.62 61.62zM366 470.11h77.8a30.36 30.36 0 0 1 30.32 30.31v66.46a31.65 31.65 0 0 0 31.62 31.62h119a31.65 31.65 0 0 0 31.62-31.62V351.14A48.7 48.7 0 0 0 642 316.46L442.4 117a53.09 53.09 0 0 0-74.94 0L167.88 316.46a48.7 48.7 0 0 0-14.37 34.68v215.74a31.65 31.65 0 0 0 31.62 31.62h119a31.65 31.65 0 0 0 31.62-31.62v-66.46A30.35 30.35 0 0 1 366 470.11z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g></svg> Dashboard</li>
 
       <li onclick="window.location.href='user.html'" style="display: flex; align-items: center; gap: 15px;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M256 0c-74.439 0-135 60.561-135 135s60.561 135 135 135 135-60.561 135-135S330.439 0 256 0zM423.966 358.195C387.006 320.667 338.009 300 286 300h-60c-52.008 0-101.006 20.667-137.966 58.195C51.255 395.539 31 444.833 31 497c0 8.284 6.716 15 15 15h420c8.284 0 15-6.716 15-15 0-52.167-20.255-101.461-57.034-138.805z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g></svg> Users</li> 
 
@@ -171,36 +171,36 @@
     </section>
 
     <section class="stats">
-      <div class="stat">14<br><span class="span1">Draft Orders</span></div>
-      <div class="stat">10<br><span class="span1">Pending Orders</span></div>
-      <div class="stat">125<br><span class="span1">Completed Orders</span></div>
-      <div class="stat">40<br><span class="span1">Canceled Orders</span></div>
+      <div class="stat">14<br><span class="span1">Draft User</span></div>
+      <div class="stat">10<br><span class="span1">Pending User</span></div>
+      <div class="stat">125<br><span class="span1">Completed User</span></div>
+      <div class="stat">40<br><span class="span1">Canceled User</span></div>
     </section>
 
-    <section class="orders">
-     <div class="header-orders">
-       <h2>List of Orders</h2>
-      <button class="add-btn" onclick="addOrder()"> Add Order</button>
+    <section class="User">
+     <div class="header-User">
+       <h2>List of User</h2>
+      <button class="add-btn" onclick="addUser()"> Add User</button>
      </div>
       <table>
         <thead>
           <tr>
-            <th>No of Orders</th>
+            <th>No of User</th>
             <th>Quantity</th>
-            <th>No of Products</th>
+            <th>No of User</th>
             <th>Amount</th>
             <th>Status</th>
             <th>Action</th>
           </tr>
         </thead>
-        <tbody id="orderTable">
+        <tbody id="UserTable">
           <tr>
             <td>45</td>
             <td>800</td>
             <td>23340</td>
             <td>$2,300</td>
             <td><span class="delivered">Delivered</span></td>
-            <td><button class="delete-btn" onclick="deleteOrder(this)">🗑 Delete</button></td>
+            <td><button class="delete-btn" onclick="deleteUser(this)">🗑 Delete</button></td>
           </tr>
           <tr>
             <td>12</td>
@@ -208,7 +208,7 @@
             <td>3400</td>
             <td>$700</td>
             <td><span class="pending">Pending</span></td>
-            <td><button class="delete-btn" onclick="deleteOrder(this)">🗑 Delete</button></td>
+            <td><button class="delete-btn" onclick="deleteUser(this)">🗑 Delete</button></td>
           </tr>
         </tbody>
       </table>
@@ -216,8 +216,8 @@
   </div>
 
   <script>
-    function addOrder() {
-      const table = document.getElementById("orderTable");
+    function addUser() {
+      const table = document.getElementById("UserTable");
       const row = table.insertRow();
 
       row.innerHTML = `
@@ -226,11 +226,11 @@
         <td>0</td>
         <td>$0</td>
         <td><span class="pending">Pending</span></td>
-        <td><button class="delete-btn" onclick="deleteOrder(this)">🗑 Delete</button></td>
+        <td><button class="delete-btn" onclick="deleteUser(this)">🗑 Delete</button></td>
       `;
     }
 
-    function deleteOrder(btn) {
+    function deleteUser(btn) {
       btn.closest("tr").remove();
     }
 
