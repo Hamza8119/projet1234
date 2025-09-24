@@ -54,7 +54,7 @@
 
     .hero {
       position: relative;
-      background-image: url('926f1e30-18d4-4b18-be6f-91437cb2d4f0.png');
+      
       background-size: cover;
       background-position: center;
       height: 90vh;
@@ -63,6 +63,7 @@
       justify-content: center;
       padding-left: 50px;
       color: white;
+      background-image: url('C:/Users/Default.DESKTOP-67P6GFG/Desktop/projet1234/imags/image4.png');
     }
     .hero h1 {
       font-size: 50px;
@@ -70,8 +71,9 @@
       margin-bottom: 20px;
       text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
     }
-    .hero button {
+    .hero .btn-1 {
       padding: 12px 25px;
+      width: 220px;
       font-size: 16px;
       border: none;
       border-radius: 25px;
@@ -80,33 +82,116 @@
       color: #880e0e;
       font-weight: bold;
     }
-    .hero button:hover {
+    .hero .btn-1:hover {
       background: #880e0e;
       color: #fff;
       transition: 0.3s;
+    }
+    .images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;            
+  padding: 20px;
+  align-items: center;   
+}
+
+.images .image img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.images h2 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+}
+  .btn-2 {
+      padding: 12px 25px;
+      width: 220px;
+      font-size: 16px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      background: #fff;
+      color: #880e0e;
+      font-weight: bold;
+    }
+    .btn-2:hover {
+      background: #880e0e;
+      color: #fff;
+      transition: 0.3s;
+    }
+    h1{
+       
+        font-size: 40px;
+        margin-bottom: 20px;
+        margin-left:20px ;
+    }
+    .vere{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+
+
+  
+         
+  
     }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="logo">Logo</div>
+    <div class="logo"><img src="C:/Users/Default.DESKTOP-67P6GFG/Desktop/projet1234/imags/image5.png" alt="Ma Photo"></div>
     <nav>
       <a href="#">Home</a>
       <a href="#">Contact us</a>
       <a href="#">Categories</a>
       <input type="search" placeholder="Search">
       <div class="icons">
-        <span>&#128722;</span> <!-- shopping cart -->
-        <span>&#128100;</span> <!-- user icon -->
+        <span>&#128722;</span> 
+        <span>&#128100;</span> 
       </div>
     </nav>
   </header>
 
   <section class="hero">
     <h1>DISCOVER UNIQUE LAMPS EVERY DAY</h1>
-    <button>View all collections</button>
+    <button class="btn-1">View all collections</button>
   </section>
+  <div class="images">
+  <div class="image">
+    <img src="C:/Users/Default.DESKTOP-67P6GFG/Desktop/projet1234/imags/image1.png" alt="Image 1" width="300" height="200">
+    <h2>image</h2>
+  </div>
+    <div class="image">
+        <img src="C:/Users/Default.DESKTOP-67P6GFG/Desktop/projet1234/imags/image2.png" alt="Image 2" width="300" height="200">
+        <h2>image</h2>
+  </div>
+    <div class="image">
+        <img src="C:/Users/Default.DESKTOP-67P6GFG/Desktop/projet1234/imags/image3.png" alt="Image 3" width="300" height="200">
+        <h2>image</h2>
+    </div>
+        <div class="image">
+        <img src="C:/Users/Default.DESKTOP-67P6GFG/Desktop/projet1234/imags/image6.png" alt="Image 6" width="300" height="200">
+        <h2>image</h2>
+    </div>
+        <div class="image">
+         <img src="C:/Users/Default.DESKTOP-67P6GFG/Desktop/projet1234/imags/image1.png" alt="Image 1" width="300" height="200">
+        <h2>image</h2>
+    </div>
+    </div>
+    <div class="fattk">
+        <div class="vere">
+                <h1>FEATURIN FLAMP</h1>
+                <button class="btn-2">View all collections</button>
+        </div>
+    </div>
+    
+
 
 </body>
 </html>
