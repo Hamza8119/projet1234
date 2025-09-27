@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Login.css">
-    <title>Document</title>
+    <title>Login Page</title>
 </head>
 <body>
     <div class="main_container">
@@ -34,17 +34,24 @@
             <div class="sub_1_container_3"> <!-- ila nsiti l code ou sign in button -->
                 <a href="">Forgot your Password</a> <!-- link ila nsiti l code dialk-->
                 <input type="submit" value="Sign In"> <!-- button dial sing in -->
+                
             </div>
         </div>
         <div class="container_2"> <!-- jiha liser diali tania-->
-            <div class="sub_2_container_1"> <!--ktba li hadi tkon fiha-->
-                <p>Welcome back</p>
+            <div class="test">
+                <div class="sub_2_container_1"> <!--ktba li hadi tkon fiha-->
+                </div>
+                <div class="sub_2_container_2"> <!-- button li hadi idik l page dial sign up-->
+                    <h1>Welcome back</h1>
+                </div>
+                <div class="sub_2_container_3">
+                    <span>Don't have an account</span><br><br>
+                    <form action="Sign_Up.html" method="get" onclick="window.location.href='Sign_Up.html'">
+                        <input id="second" type="submit" value="Sign Up"> <!-- button dial sing in -->
+                    </form>
+                </div>
             </div>
-            <div class="sub_2_container_2"> <!-- button li hadi idik l page dial sign up-->
-                <span>Don't have an account</span><br>
-                <input type="submit" value="Sign Up">
             </div>
-        </div>
     </div>
     
 </body>
