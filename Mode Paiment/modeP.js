@@ -77,6 +77,7 @@
         
             <button onclick="return verifier()" class="btn-pay">Payer</button>
             
+          
           </div>
         `;
        
