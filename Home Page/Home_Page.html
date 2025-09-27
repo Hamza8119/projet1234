@@ -78,7 +78,7 @@ nav svg {
       justify-content: center;
       padding-left: 50px;
       color: white;
-      background-image: url('C:/Users/Default.DESKTOP-67P6GFG/Desktop/projet1234/imags/image4.png');
+      background-image: url('../imags/image4.png');
     }
     .hero::before {
   content: "";
@@ -87,7 +87,7 @@ nav svg {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('C:/Users/Default.DESKTOP-67P6GFG/Desktop/projet1234/imags/dow.png') no-repeat center;
+  background: url('../imags/dow.png') no-repeat center;
   background-size: cover;
   pointer-events: none;
 }
@@ -203,7 +203,7 @@ nav svg {
       color: white;
       background-image: 
         linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-        url('C:/Users/Default.DESKTOP-67P6GFG/Desktop/projet1234/imags/image11.png');
+        url('../imags/image11.png');
     }
     
 
@@ -243,7 +243,10 @@ nav svg {
       color: #fff;
       transition: 0.3s;
     }
-
+    
+    img:active {
+      transform: scale(0.95);
+    }
 
 
 
@@ -393,26 +396,31 @@ footer {
   transform: scale(1.2) translateY(-3px);
   text-shadow: 0 0 6px  #880e0e, 0 0 12px  #880e0e, 0 0 18px #880e0e;
 }
+.cart-icon:hover {
+  
+   fill: #880e0e;
+ 
+}
 
   </style>
 </head>
 <body>
 
   <header>
-    <div class="logo"><img src="C:/Users/Default.DESKTOP-67P6GFG/Desktop/projet1234/imags/image5.png" alt="Ma Photo"></div>
+    <div class="logo"><img src="../imags/image5.png" alt="Ma Photo"></div>
     <nav>
-        <a href="#" class="active" onclick="window.location.href='Home_Page.html'">Home</a>
-      <a href="#" onclick="window.location.href='Contact_Us.html'">Contact us</a>
-      <a href="#">Categories</a>
+        <a href="../Home Page/Home_Page.html" class="active">Home</a>
+      <a href="../Contact Us/Contact_Us.html">Contact us</a>
+      <a href="../Product/All_product_page.html">Categories</a>
       <input type="search" placeholder="Search">
   <div class="icons">
   <!-- SVG عربة تسوق -->
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"style="cursor: pointer;" class="cart-icon" onclick="window.location.href='../Product/your_cart.html'    ">
     <path d="M7 18c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm10 0c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zM7.16 13h9.68c.55 0 1.04-.37 1.18-.91l2-7c.11-.39-.12-.79-.53-.79H5.21L4.27 2H1v2h2l3.6 7.59-1.35 2.44c-.14.25-.22.54-.22.84 0 1.104.896 2 2 2h12v-2H7.16z"/>
   </svg>
 
   <!-- SVG أيقونة مستخدم -->
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" class="cart-icon" style="cursor: pointer;" onclick="window.location.href='../Login_Sign_Up/Login.html'">
     <path d="M12 12c2.7 0 4.88-2.18 4.88-4.88S14.7 2.24 12 2.24 7.12 4.42 7.12 7.12 9.3 12 12 12zm0 2c-3.33 0-10 1.67-10 5v3h20v-3c0-3.33-6.67-5-10-5z"/>
   </svg>
 </div>
@@ -428,23 +436,23 @@ footer {
   <!-- أول مجموعة صور -->
   <div class="images">
     <div class="image">
-      <img src="C:/Users/Default.DESKTOP-67P6GFG/Desktop/projet1234/imags/image1.png" alt="Image 1">
+      <img src="../imags/image1.png" alt="Image 1">
       <h2>image</h2>
     </div>
     <div class="image">
-      <img src="C:/Users/Default.DESKTOP-67P6GFG/Desktop/projet1234/imags/image2.png" alt="Image 2">
+      <img src="../imags/image2.png" alt="Image 2">
       <h2>image</h2>
     </div>
     <div class="image">
-      <img src="C:/Users/Default.DESKTOP-67P6GFG/Desktop/projet1234/imags/image3.png" alt="Image 3">
+      <img src="../imags/image3.png" alt="Image 3">
       <h2>image</h2>
     </div>
     <div class="image">
-      <img src="C:/Users/Default.DESKTOP-67P6GFG/Desktop/projet1234/imags/image6.png" alt="Image 6">
+      <img src="../imags/image6.png" alt="Image 6">
       <h2>image</h2>
     </div>
     <div class="image">
-      <img src="C:/Users/Default.DESKTOP-67P6GFG/Desktop/projet1234/imags/image1.png" alt="Image 1">
+      <img src="../imags/image1.png" alt="Image 1">
       <h2>image</h2>
     </div>
   </div>
@@ -460,15 +468,15 @@ footer {
   </div>
        <div class="imagees">
       <div class="imagee">
-        <img src="C:/Users/Default.DESKTOP-67P6GFG/Desktop/projet1234/imags/image10.png" alt="Image 10">
+        <img src="../imags/image10.png" alt="Image 10">
         <h2 class="h2-2">image</h2>
       </div>
       <div class="imagee">
-        <img src="C:/Users/Default.DESKTOP-67P6GFG/Desktop/projet1234/imags/image8.png" alt="Image 8">
+        <img src="../imags/image8.png" alt="Image 8">
      <h2 class="h2-2">image</h2>
       </div>
       <div class="imagee">
-        <img src="C:/Users/Default.DESKTOP-67P6GFG/Desktop/projet1234/imags/image9.png" alt="Image 9">
+        <img src="../imags/image9.png" alt="Image 9">
         <h2 class="h2-2">image</h2>
       </div>
     </div>
@@ -489,12 +497,12 @@ footer {
   <!-- Top Section -->
   <div class="footer-top">
     <div class="footer-left">
-      <img src="C:/Users/Default.DESKTOP-67P6GFG/Desktop/projet1234/imags/image5.png" alt="Logo">
-      <a href="#">Home</a>
+      <img src="../imags/image5.png" alt="Logo">
+      <a href="../Home Page/Home_Page.html">Home</a>
     </div>
     <div class="footer-right">
-      <a href="#" onclick="window.location.href='Contact_Us.html'">Contact Us</a>
-      <a href="#">Categories</a>
+      <a href="../Contact Us/Contact_Us.html">Contact Us</a>
+      <a href="../Product/All_product_page.html">Categories</a>
     </div>
   </div>
 
