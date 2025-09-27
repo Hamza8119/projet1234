@@ -10,6 +10,9 @@
     flex-direction: row;
         height: 100vh;
         justify-content: space-around;
+       
+       
+       
     }
 
     .container {
@@ -40,7 +43,10 @@
       cursor: pointer;
       background: #fafafa;
       transition: all 0.3s ease;
-      box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+      box-shadow: rgba(4, 53, 230, 0.25) 0px 2px 4px, 
+            rgba(4, 53, 230, 0.20) 0px 4px 8px, 
+            rgba(4, 53, 230, 0.15) 0px 8px 16px;
+
     }
 
     .option-btn:hover {
@@ -57,6 +63,7 @@
       display: flex;
       flex-direction: column;
       margin-bottom: 15px;
+      gap: 10px;
     }
 
     .form-inline {
@@ -105,3 +112,26 @@
     .btn-pay:hover {
       background-color: #0ba0eada;
     }
+    .side-image {
+  max-width: 400px;
+  height: auto;
+  
+}
+.side-image {
+  max-width: 300px;
+  height: 444px;
+}
+
+.left-image {
+  order: 1; /* يسار */
+}
+
+.content {
+  order: 2; /* وسط */
+  text-align: center;
+  max-width: 500px;
+}
+
+.right-image {
+  order: 3; /* يمين */
+}
