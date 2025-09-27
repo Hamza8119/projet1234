@@ -136,7 +136,7 @@ input:focus{
 .test{
     flex: 1;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-        url("https://images.unsplash.com/photo-1700316740839-f5afe22536e4?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&dl=a-chosen-soul-o-D3p035Ou0-unsplash.jpg");
+        url("../imags/img_login_sign_up.jpg");
     background-size: cover;
     color: white;
     width: 100%;
