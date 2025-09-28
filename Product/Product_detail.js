@@ -60,7 +60,7 @@ addToCartBtn.addEventListener("click", () => {
     }
 
     const productTitle = document.querySelector(".title").textContent;
-    const productPrice = document.querySelector(".price").textContent;
+   const productPrice = parseFloat(document.querySelector(".price").textContent.replace(/[^\d.]/g, ""));
     const productImage = document.querySelector(".main-image").src;
     const selectedColor = selectedColorEl.getAttribute("data-color");
     const selectedSize = selectedSizeEl.textContent;
