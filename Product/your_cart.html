@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>buy</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Cart</title>
+<style>
+body { font-family: Arial, sans-serif; padding: 20px; background: #f5f5f5; }
+.cart-item { background: white; padding: 15px; border-radius: 8px; max-width: 500px; margin: 20px auto; display: flex; gap: 15px; align-items: center; }
+.cart-item img { width: 100px; height: 100px; object-fit: cover; border-radius: 8px; }
+.cart-item div { flex: 1; }
+button { padding: 10px 20px; margin-top: 5px; cursor: pointer; border: none; border-radius: 5px; font-size: 16px; }
+.remove { background: #ff4d4d; color: white; }
+.buy { background: #4CAF50; color: white; margin-left: 10px; }
+</style>
 </head>
 <body>
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur fugiat, eligendi animi quas porro asperiores iusto. Ullam quibusdam dicta aspernatur voluptates quae ab, incidunt facilis vero nisi esse velit commodi?
+
+<div id="cart-container"></div>
+
+<script>
+const cartContainer = document.getElementById("cart-container");
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+if(cart.length > 0){
+    cartContainer.innerHTML = cart.map((item, index) => `
+        <div class="cart-item">
+            <img src="${item.image}" alt="${item.title}">
+            <div>
+                <h2>${item.title}</h2>
+                <p><strong>Price:</strong> ${item.price}</p>
+                <p><strong>Color:</strong> <span style="background:${item.color}; padding:0 10px; border:1px solid black; ">&nbsp;</span></p>
+                <p><strong>Size:</strong> ${item.size}</p>
+                <button class="remove" onclick="removeItem(${index})">Remove</button>
+               <a href="../Mode Paiment/modep.html" style="display:inline-block; padding:10px 20px; background:GREEN; color:white; border:none; border-radius:8px; text-decoration:none; font-size:16px;">Buy</a>
+            </div>
+        </div>
+    `).join('');
+}else{
+    cartContainer.innerHTML = "<p>Your cart is empty.</p>";
+}
+
+// حذف المنتج
+function removeItem(index){
+    cart.splice(index, 1);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    location.reload();
+}
+
+// تحويل لصفحة الدفع
+
+</script>
+
 </body>
 </html>
