@@ -1,8 +1,20 @@
 <?php
+session_start();
+if (!isset($_SESSION['users'])) {
+    $_SESSION['users'] = [];
+};
+
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $userData = [
+        'userName' => $_POST['userName'],
+        'email' => $_POST['email_register'],
+        'password' => $_POST['pwd_register']
+    ];
+
     $userName = $_POST['userName'];
-    $email = $_POST['email'];
-    $password = $_POST['password'];
+    $email = $_POST['email_register'];
+    $password = $_POST['pwd_register'];
     if (isset($userName) && !empty($userName) && isset($email) && !empty($email) && isset($password) && !empty($password)) {
         header('Location: Login.php');
         exit;
@@ -51,11 +63,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </div> <!--input ou svg dial user-->
                     <div class="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M507.49 101.721 352.211 256 507.49 410.279c2.807-5.867 4.51-12.353 4.51-19.279V121c0-6.927-1.703-13.412-4.51-19.279zM467 76H45c-6.927 0-13.412 1.703-19.279 4.51l198.463 197.463c17.548 17.548 46.084 17.548 63.632 0L486.279 80.51C480.412 77.703 473.927 76 467 76zM4.51 101.721C1.703 107.588 0 114.073 0 121v270c0 6.927 1.703 13.413 4.51 19.279L159.789 256 4.51 101.721z" fill="#000000" opacity="1" data-original="#000000"></path><path d="m331 277.211-21.973 21.973c-29.239 29.239-76.816 29.239-106.055 0L181 277.211 25.721 431.49C31.588 434.297 38.073 436 45 436h422c6.927 0 13.412-1.703 19.279-4.51L331 277.211z" fill="#000000" opacity="1" data-original="#000000"></path></g></svg>
-                        <input type="email" name="email" placeholder="Enter your email" required>
+                        <input type="email" name="email_register" placeholder="Enter your email" required>
                     </div><!--input ou svg email-->
                     <div class="icon"> <!--input ou svg dial password-->
                         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M18.75 9H18V6c0-3.309-2.691-6-6-6S6 2.691 6 6v3h-.75A2.253 2.253 0 0 0 3 11.25v10.5C3 22.991 4.01 24 5.25 24h13.5c1.24 0 2.25-1.009 2.25-2.25v-10.5C21 10.009 19.99 9 18.75 9zM8 6c0-2.206 1.794-4 4-4s4 1.794 4 4v3H8zm5 10.722V19a1 1 0 1 1-2 0v-2.278c-.595-.347-1-.985-1-1.722 0-1.103.897-2 2-2s2 .897 2 2c0 .737-.405 1.375-1 1.722z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g></svg>
-                        <input type="password" name="password" placeholder="Password" required>
+                        <input type="password" name="pwd_register" placeholder="Password" required>
                     </div>
                 </div>
             </div>
