@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background: rgba(168, 151, 116, 0.938)
+  background: rgba(168, 151, 116, 0.938);
   color: #333;
 }
 
@@ -13,7 +13,7 @@ h2 {
   display: flex;
   gap: 30px;
   padding: 20px;
-  background:rgba(168, 151, 116, 0.938)
+  background: rgba(168, 151, 116, 0.938);
 }
 
 .product-images {
@@ -109,7 +109,7 @@ h2 {
 
 .related, .popular {
   margin: 20px;
-  background: rgba(168, 151, 116, 0.938)
+  background: rgba(168, 151, 116, 0.938);
   padding: 15px;
   border-radius: 8px;
 }
@@ -121,7 +121,7 @@ h2 {
 }
 
 .card {
-  background: rgba(168, 151, 116, 0.938)
+  background: rgba(168, 151, 116, 0.938);
   border-radius: 6px;
   padding: 10px;
   text-align: center;
@@ -130,4 +130,36 @@ h2 {
 .card img {
   width: 100%;
   border-radius: 6px;
+}
+
+.quantity-container {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.quantity-container .btn {
+  border: none;
+  background: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 8px 14px;
+  color: #333;
+  transition: background 0.2s;
+}
+
+.quantity-container .btn:hover {
+  background: #f0f0f0;
+}
+
+#quantity {
+  padding: 0 18px;
+  font-size: 16px;
+  color: #333;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
 }
