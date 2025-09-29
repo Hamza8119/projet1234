@@ -4,46 +4,84 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product Page</title>
-  <link rel="stylesheet" href="product_detail.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../Product/Product_detail.css">
 </head>
 <body>
- 
-  <section class="product-page">
-    <div class="product-images">
-      <img src="https://ae01.alicdn.com/kf/Se89e0a5a2fb84384932c01fe6b4f6ca6i.jpg" alt="Main product image" class="main-img">
-      <div class="thumbs">
-        <img src="https://ae01.alicdn.com/kf/Se89e0a5a2fb84384932c01fe6b4f6ca6i.jpg" alt="pic">
-        <img src="https://ae04.alicdn.com/kf/S09e0885c2e334e7d9402e73c33a6baf1m.jpg" alt="pic">
-        <img src="https://ae01.alicdn.com/kf/S38a4d893120440e3bc83f4a9cd0ad347w.jpg" alt="pic">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaiFsRGbJ6pQKvfPj1emqH0AfUD-HYMENdEgP3gDqoSrd8hFoU8m_zr6FSqEf9XT41Rj0&usqp=CAU" alt="pic">
+     <header>
+    <div class="logo"><img src="../imags/image5.png" alt="Ma Photo"></div>
+    <nav>
+        <a href="../Home Page/Home_Page.html" class="actives">Home</a>
+      <a href="../Contact Us/Contact_Us.html">Contact us</a>
+      <a href="../Product/All_product_page.html">Categories</a>
+      <input type="search" placeholder="Search">
+  <div class="icons">
+<div style="position: relative; cursor: pointer;" onclick="window.location.href='../Product/your_cart.html'">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" class="cart-icon">
+    <path d="M7 18c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm10 0c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zM7.16 13h9.68c.55 0 1.04-.37 1.18-.91l2-7c.11-.39-.12-.79-.53-.79H5.21L4.27 2H1v2h2l3.6 7.59-1.35 2.44c-.14.25-.22.54-.22.84 0 1.104.896 2 2 2h12v-2H7.16z"/>
+  </svg>
+  <span id="cart-count" style="
+      position: absolute;
+      top: -8px;
+      right: -8px;
+      background: red;
+      color: white;
+      border-radius: 50%;
+      padding: 2px 6px;
+      font-size: 12px;
+      font-weight: bold;
+  ">0</span>
+</div>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" class="cart-icon" style="cursor: pointer;" onclick="window.location.href='../Login_Sign_Up/Login.html'">
+    <path d="M12 12c2.7 0 4.88-2.18 4.88-4.88S14.7 2.24 12 2.24 7.12 4.42 7.12 7.12 9.3 12 12 12zm0 2c-3.33 0-10 1.67-10 5v3h20v-3c0-3.33-6.67-5-10-5z"/>
+  </svg>
+</div>
+
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="product-image">
+      <img src="../imags/image3.png" alt="Product" class="main-image">
+      <div class="thumbnail-list">
+        <img src="../imags/image2.png" alt="" class="active">
+        <img src="../imags/image8.png" alt=""  class="">
+        <img src="../imags/image7.png" alt=""class="">
+        <img src="../imags/image6.png" alt="" class="">
       </div>
     </div>
 
-    <div class="product-info">
-      <h2>traditional handcrafted earrings</h2>
-      <p class="price"><span class="old-price">600dh</span> 300dh</p>
-      <p class="sold">50% Sold ★ 4.5</p>
+    <div class="product-details">
+      <p class="brand">John Lewis ANYDAY</p>
+      <h2 class="title">Long Sleeve Overshirt, Khaki, 6</h2>
+      <p><span class="old-price">£40.00</span> <span class="price">£28.00</span></p>
+      <p class="sold">1,238 Sold • <span class="rating">★ 4.5</span></p>
 
-      <h3>Description:</h3>
-      <p class="desc">
-        Enjoy a touch of Moroccan authenticity with these traditional handcrafted earrings, made with meticulous care. A unique piece that combines classic design with high-quality gold plating, ensuring color durability and resistance to wear. Perfect for special occasions, it adds a touch of elegance and beauty to your look
+      <p class="description">
+        Boba etiam ut bulla tea est potus dilectus singulari compositione saporum et textuum,
+        quae in Taiwan annis 1980 orta sunt...
       </p>
 
-      <h3>Color:</h3>
+      <h4 id="colorTitle">Color: Royal Brown</h4>   
       <div class="colors">
-        <span class="color brown"></span>
-        <span class="color beige"></span>
-        <span class="color navy"></span>
+      <div class="color-option" style="background:#4a3b2c;" data-color="Royal Brown"></div>
+      <div class="color-option" style="background:#fff;" data-color="White"></div>
+      <div class="color-option" style="background:#2e5a88;" data-color="Blue"></div>
+      <div class="color-option" style="background:#111;" data-color="Black"></div>
+
       </div>
 
-      <h3>Size:</h3>
+      <h4>Size: 8</h4>
       <div class="sizes">
-        <button>6</button>
-        <button>8</button>
-        <button>10</button>
-        <button>12</button>
+        <div class="size">6</div>
+        <div class="size ">8</div>
+        <div class="size">10</div>
+        <div class="size">14</div>
+        <div class="size">18</div>
+        <div class="size">20</div>
       </div>
 
+<<<<<<< HEAD
       <div class="actions">
         
   <div class="quantity-container">
@@ -77,30 +115,221 @@
         <img src="https://i.pinimg.com/736x/29/98/7e/29987e6dc00fd395b5d8d419a320a7c3.jpg" alt="">
         <p>mdma</p>
         <p>500dh</p>
+=======
+   <button class="btn btn-cart">Add To Cart</button>
+    <div id="notification" style="
+    position: fixed;
+    top: 55px;
+    right: 20px;
+    background: #111;
+    opacity: 0.6;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    display: none;
+    z-index: 1000;
+    font-weight: bold;
+"></div>
+    <button class="btn btn-checkout">Checkout Now</button>
+
+      <p class="t-c">Delivery T&C</p>
+    </div>
+  </div>
+  <section class="related-products">
+  <div class="related-header">
+    <h2>
+      <span class="highlight">R</span>elated Product
+    </h2>
+    <a href="../Product/All_product_page.html" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+    
+  </div>
+
+  <div class="related-list">
+    <!-- Product Card -->
+     
+        <div class="related-card">
+      <img src="../imags/image7.png" alt="Lamp">
+      <h4>John Lewis ANYDAY</h4>
+      <p class="price">$40</p>
+      <p class="desc">Denim Overshirt, Mid Wash</p>
+      <div class="rating">
+        <span>★</span>
+        <span>4.6</span>
+        <span>• 238 Sold</span>
       </div>
     </div>
-  </section>
-
-
-  <section class="popular">
-    <h2>Popular This Week</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="https://m.media-amazon.com/images/I/61s+P1HQg1L._AC_SY300_SX300_.jpg" alt="">
-        <p>accesoir</p>
-        <p>2000dh</p>
-      </div>
-      <div class="card">
-        <img src="https://www.casablancax.com/wp-content/uploads/2022/12/gouden-marokkaanse-ketting-groen-kamyla-01-scaled.jpeg" alt="">
-        <p>joher </p>
-        <p>2500dh</p>
-      </div>
-      <div class="card">
-        <img src="https://ae01.alicdn.com/kf/Sbd0c34265f364ded866bf16c1a598d20l.jpg" alt="">
-        <p> accesoir maroocain</p>
-        <p>1000dh</p>
+    <div class="related-card">
+      <img src="../imags/image2.png" alt="Lamp">
+      <h4>Whistle</h4>
+      <p class="price">$26</p>
+      <p class="desc">Wide Leg Cropped Jeans</p>
+      <div class="rating">
+        <span>★</span>
+        <span>4.8</span>
+        <span>• 1,238 Sold</span>
+>>>>>>> 2fffa8b37cdbef49877d0b6baee0188ab12238cd
       </div>
     </div>
-  </section>
+
+    <div class="related-card">
+      <img src="../imags/image6.png" alt="Lamp">
+      <h4>John Lewis ANYDAY</h4>
+      <p class="price">$32</p>
+      <p class="desc">Stripe Curved Hem Shirt</p>
+      <div class="rating">
+        <span>★</span>
+        <span>4.5</span>
+        <span>• 620 Sold</span>
+      </div>
+    </div>
+
+    <div class="related-card">
+      <img src="../imags/image7.png" alt="Lamp">
+      <h4>John Lewis ANYDAY</h4>
+      <p class="price">$40</p>
+      <p class="desc">Denim Overshirt, Mid Wash</p>
+      <div class="rating">
+        <span>★</span>
+        <span>4.6</span>
+        <span>• 238 Sold</span>
+      </div>
+    </div>
+
+    <div class="related-card">
+      <img src="../imags/image8.png" alt="Lamp">
+      <h4>John Lewis</h4>
+      <p class="price">$79</p>
+      <p class="desc">Linen Blazer, Navy</p>
+      <div class="rating">
+        <span>★</span>
+        <span>4.8</span>
+        <span>• 1,238 Sold</span>
+      </div>
+    </div>
+       <div class="related-card">
+      <img src="../imags/image7.png" alt="Lamp">
+      <h4>John Lewis ANYDAY</h4>
+      <p class="price">$40</p>
+      <p class="desc">Denim Overshirt, Mid Wash</p>
+      <div class="rating">
+        <span>★</span>
+        <span>4.6</span>
+        <span>• 238 Sold</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="related-products">
+  <div class="related-header">
+    <h2>
+      <span class="highlight">P</span>upolar the week
+    </h2>
+    <a href="../Product/All_product_page.html" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+  </div>
+
+  <div class="related-list">
+    <!-- Product Card -->
+     
+        <div class="related-card">
+      <img src="../imags/image7.png" alt="Lamp">
+      <h4>John Lewis ANYDAY</h4>
+      <p class="price">$40</p>
+      <p class="desc">Denim Overshirt, Mid Wash</p>
+      <div class="rating">
+        <span>★</span>
+        <span>4.6</span>
+        <span>• 238 Sold</span>
+      </div>
+    </div>
+    <div class="related-card">
+      <img src="../imags/Paper_lantern 1.png" alt="Lamp">
+      <h4>Whistle</h4>
+      <p class="price">$26</p>
+      <p class="desc">Wide Leg Cropped Jeans</p>
+      <div class="rating">
+        <span>★</span>
+        <span>4.8</span>
+        <span>• 1,238 Sold</span>
+      </div>
+    </div>
+
+    <div class="related-card">
+      <img src="../imags/LED_lantern 1.png" alt="Lamp">
+      <h4>John Lewis ANYDAY</h4>
+      <p class="price">$32</p>
+      <p class="desc">Stripe Curved Hem Shirt</p>
+      <div class="rating">
+        <span>★</span>
+        <span>4.5</span>
+        <span>• 620 Sold</span>
+      </div>
+    </div>
+
+    <div class="related-card">
+      <img src="../imags/Vector (9).png" alt="Lamp">
+      <h4>John Lewis ANYDAY</h4>
+      <p class="price">$40</p>
+      <p class="desc">Denim Overshirt, Mid Wash</p>
+      <div class="rating">
+        <span>★</span>
+        <span>4.6</span>
+        <span>• 238 Sold</span>
+      </div>
+    </div>
+
+    <div class="related-card">
+      <img src="../imags/Vector (8).png" alt="Lamp">
+      <h4>John Lewis</h4>
+      <p class="price">$79</p>
+      <p class="desc">Linen Blazer, Navy</p>
+      <div class="rating">
+        <span>★</span>
+        <span>4.8</span>
+        <span>• 1,238 Sold</span>
+      </div>
+    </div>
+       <div class="related-card">
+      <img src="../imags/Gas_lantern 1.png" alt="Lamp">
+      <h4>John Lewis ANYDAY</h4>
+      <p class="price">$40</p>
+      <p class="desc">Denim Overshirt, Mid Wash</p>
+      <div class="rating">
+        <span>★</span>
+        <span>4.6</span>
+        <span>• 238 Sold</span>
+      </div>
+    </div>
+  </div>
+</section>
+  <footer>
+  <!-- Top Section -->
+  <div class="footer-top">
+    <div class="footer-left">
+      <img src="../imags/image5.png" alt="Logo">
+      <a href="../Home Page/Home_Page.html">Home</a>
+    </div>
+    <div class="footer-right">
+      <a href="../Contact Us/Contact_Us.html">Contact Us</a>
+      <a href="../Product/All_product_page.html">Categories</a>
+    </div>
+  </div>
+
+ 
+  <div class="footer-bottom">
+    <p>
+      &copy; 2025 WebStore. All rights reserved.
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+    </p>
+
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+  <script src="../Product/Product_detail.js">
+</script>
 </body>
 </html>

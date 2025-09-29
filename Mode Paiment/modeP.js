@@ -8,8 +8,24 @@
         b1.style.borderColor = "#007bff";
         b2.style.background = "white";
         b2.style.borderColor = "#ccc";
-        payement.innerHTML = `Vous avez choisi le paiement à la livraison.
-        <a href="comande.html" onclick=" target="_blank"><button class="btn-pay">Confirmer la commande</button></a>
+        payement.innerHTML = `   
+        <div class="form-group"> 
+        <label for="ville">ville :</label>
+         <select class="form-input" name="ville" id="ville">
+           <option value="casablanca">casablanca</option>
+           <option value="rabat">rabat</option>
+           <option value="marrakech">marrakech</option>
+           <option value="tanger">tanger</option>
+            <option value="agadir">agadir</option>
+          </select>
+          <label class="form-label" for="adresse">adresse :</label>
+          <input class="form-input" type="text" id="adresse" name="adresse" placeholder="votre adresse">
+          <label class="form-label" for="postal">code postal :</label>
+          <input class="form-input" type="text" id="postal" name="postal" placeholder="code postal">
+          <label class="form-label" for="phone">phone :</label>
+          <input class="form-input" type="text" id="phone" name="phone" maxlength="10" placeholder="votre numero de telephone">
+          </div> 
+        <a href="comande.html" onclick="return verifier()" target="_blank"><button class="btn-pay">Confirmer la commande</button></a>
         `;
       } else { // Paiement par carte
             b2.style.background = "#e9f5ff";
@@ -40,16 +56,29 @@
                   oninput="this.value = this.value.replace(/[^0-9]/g, '');">
               </div>
             </div>
-
-            <a href="comande.html" onclick="return verifier()" target="_blank"><button class="btn-pay">Payer</button></a>
-            <script>
-            function verifier(){
-            let cardNumber = document.getElementById("cardNumber").value;
-            let expiryDate = document.getElementById("expiryDate").value;
-            let cvv = document.getElementById("cvv").value;
-           
+             <div class="form-group"> 
+        <label for="ville">ville :</label>
+         <select class="form-input" name="ville" id="ville">
+           <option value="casablanca">casablanca</option>
+           <option value="rabat">rabat</option>
+           <option value="marrakech">marrakech</option>
+           <option value="tanger">tanger</option>
+            <option value="agadir">agadir</option>
+          </select>
+          <label class="form-label" for="adresse">adresse :</label>
+          <input class="form-input" type="text" id="adresse" name="adresse" placeholder="votre adresse">
+          <label class="form-label" for="postal">code postal :</label>
+          <input class="form-input" type="text" id="postal" name="postal" placeholder="code postal">
+          <label class="form-label" for="phone">phone :</label>
+          <input class="form-input" type="text" id="phone" name="phone" maxlength="10" placeholder="votre numero de telephone">
+          </div> 
+            
+      
+        
+            <button onclick="return verifier()" class="btn-pay">Payer</button>
+            
           
-          </script>
+            
           </div>
         `;
        
@@ -57,3 +86,11 @@
        
       }
      }
+       window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    if(window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
